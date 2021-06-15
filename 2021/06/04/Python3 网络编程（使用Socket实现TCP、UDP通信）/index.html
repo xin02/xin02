@@ -17,22 +17,21 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hello World | Hexo</title>
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <title>Python3 网络编程（使用Socket实现TCP、UDP通信） | Hexo</title>
+  <meta name="description" content="TCP通信TCP_服务端123456789101112 1 import socket as s 2  3 tcp &#x3D; s.socket(s.AF_INET,s.SOCK_STREAM) 4 tcp.bind((&amp;#x27;127.0.0.1&amp;#x27;, 6666)) 5 tcp.listen(5) 6 while True: 7     # 建立客户端连接 8     clientsocket">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://xin02.github.io/2021/06/15/hello-world/index.html">
+<meta property="og:title" content="Python3 网络编程（使用Socket实现TCP、UDP通信）">
+<meta property="og:url" content="https://xin02.github.io/2021/06/04/Python3%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%88%E4%BD%BF%E7%94%A8Socket%E5%AE%9E%E7%8E%B0TCP%E3%80%81UDP%E9%80%9A%E4%BF%A1%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="TCP通信TCP_服务端123456789101112 1 import socket as s 2  3 tcp &#x3D; s.socket(s.AF_INET,s.SOCK_STREAM) 4 tcp.bind((&amp;#x27;127.0.0.1&amp;#x27;, 6666)) 5 tcp.listen(5) 6 while True: 7     # 建立客户端连接 8     clientsocket">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-06-15T06:15:56.805Z">
-<meta property="article:modified_time" content="2021-06-15T08:16:07.733Z">
+<meta property="article:published_time" content="2021-06-04T05:08:00.000Z">
+<meta property="article:modified_time" content="2021-06-15T08:28:25.376Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="文章标签1">
-<meta property="article:tag" content="文章标签2">
+<meta property="article:tag" content="-Python -Socket">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://xin02.github.io/2021/06/15/hello-world/index.html">
+  <link rel="canonical" href="https://xin02.github.io/2021/06/04/Python3%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%88%E4%BD%BF%E7%94%A8Socket%E5%AE%9E%E7%8E%B0TCP%E3%80%81UDP%E9%80%9A%E4%BF%A1%EF%BC%89/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -196,7 +195,7 @@
   <div class="widget">
     <h3 class="widget-title">分类</h3>
     <div class="widget-body">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB1/">文章分类1</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB1/%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB2/">文章分类2</a><span class="category-list-count">1</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">-Python</a><span class="category-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -206,7 +205,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE1/" rel="tag">文章标签1</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE2/" rel="tag">文章标签2</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-Socket/" rel="tag">-Python -Socket</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python-%E5%A4%9A%E7%BA%BF%E7%A8%8B-%E4%BA%92%E6%96%A5%E9%94%81/" rel="tag">-Python -多线程 -互斥锁</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -216,7 +215,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE1/" style="font-size: 13px;">文章标签1</a> <a href="/tags/%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE2/" style="font-size: 13px;">文章标签2</a>
+      <a href="/tags/Python-Socket/" style="font-size: 13px;">-Python -Socket</a> <a href="/tags/Python-%E5%A4%9A%E7%BA%BF%E7%A8%8B-%E4%BA%92%E6%96%A5%E9%94%81/" style="font-size: 13px;">-Python -多线程 -互斥锁</a>
     </div>
   </div>
 
@@ -225,7 +224,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -241,13 +240,28 @@
             
             <div class="item-inner">
               <p class="item-category">
-                <a class="category-link" href="/categories/%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB1/">文章分类1</a><i class="icon icon-angle-right"></i><a class="category-link" href="/categories/%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB1/%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB2/">文章分类2</a>
+                <a class="category-link" href="/categories/Python/">-Python</a>
               </p>
               <p class="item-title">
-                <a href="/2021/06/15/hello-world/" class="title">Hello World</a>
+                <a href="/2021/06/05/Python3%20%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="title">Python3 多线程</a>
               </p>
               <p class="item-date">
-                <time datetime="2021-06-15T06:15:56.805Z" itemprop="datePublished">2021-06-15</time>
+                <time datetime="2021-06-05T12:28:00.000Z" itemprop="datePublished">2021-06-05</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Python/">-Python</a>
+              </p>
+              <p class="item-title">
+                <a href="/2021/06/04/Python3%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%88%E4%BD%BF%E7%94%A8Socket%E5%AE%9E%E7%8E%B0TCP%E3%80%81UDP%E9%80%9A%E4%BF%A1%EF%BC%89/" class="title">Python3 网络编程（使用Socket实现TCP、UDP通信）</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2021-06-04T05:08:00.000Z" itemprop="datePublished">2021-06-04</time>
               </p>
             </div>
           </li>
@@ -267,21 +281,21 @@
   <div class="slimContent">
     <nav id="toc" class="article-toc">
       <h3 class="toc-title">文章目录</h3>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TCP%E9%80%9A%E4%BF%A1"><span class="toc-number">1.</span> <span class="toc-text">TCP通信</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP-%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="toc-number">1.1.</span> <span class="toc-text">TCP_服务端</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TCP-%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="toc-number">1.2.</span> <span class="toc-text">TCP_客户端</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#UDP%E9%80%9A%E4%BF%A1"><span class="toc-number">2.</span> <span class="toc-text">UDP通信</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#UDP-%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="toc-number">2.1.</span> <span class="toc-text">UDP_服务端</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#UDP-%E5%AE%A2%E6%88%B7%E7%AB%AF"><span class="toc-number">2.2.</span> <span class="toc-text">UDP_客户端</span></a></li></ol></li></ol>
     </nav>
   </div>
 </aside>
 
 <main class="main" role="main">
   <div class="content">
-  <article id="post-hello-world" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-Python3 网络编程（使用Socket实现TCP、UDP通信）" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Python3 网络编程（使用Socket实现TCP、UDP通信）
     </h1>
   
 
@@ -289,44 +303,39 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/06/15/hello-world/" class="article-date">
-	  <time datetime="2021-06-15T06:15:56.805Z" itemprop="datePublished">2021-06-15</time>
+	<a href="/2021/06/04/Python3%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%88%E4%BD%BF%E7%94%A8Socket%E5%AE%9E%E7%8E%B0TCP%E3%80%81UDP%E9%80%9A%E4%BF%A1%EF%BC%89/" class="article-date">
+	  <time datetime="2021-06-04T05:08:00.000Z" itemprop="datePublished">2021-06-04</time>
 	</a>
 </span>
         
   <span class="article-category">
     <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB1/">文章分类1</a>►<a class="article-category-link" href="/categories/%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB1/%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB2/">文章分类2</a>
+    <a class="article-category-link" href="/categories/Python/">-Python</a>
   </span>
 
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link-link" href="/tags/%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE1/" rel="tag">文章标签1</a>, <a class="article-tag-link-link" href="/tags/%E6%96%87%E7%AB%A0%E6%A0%87%E7%AD%BE2/" rel="tag">文章标签2</a>
+	<a class="article-tag-link-link" href="/tags/Python-Socket/" rel="tag">-Python -Socket</a>
   </span>
 
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/06/15/hello-world/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/06/04/Python3%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%88%E4%BD%BF%E7%94%A8Socket%E5%AE%9E%E7%8E%B0TCP%E3%80%81UDP%E9%80%9A%E4%BF%A1%EF%BC%89/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="TCP通信"><a href="#TCP通信" class="headerlink" title="TCP通信"></a>TCP通信</h1><h2 id="TCP-服务端"><a href="#TCP-服务端" class="headerlink" title="TCP_服务端"></a>TCP_服务端</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> 1 import socket as s</span><br><span class="line"> 2 </span><br><span class="line"> 3 tcp = s.socket(s.AF_INET,s.SOCK_STREAM)</span><br><span class="line"> 4 tcp.bind((&#x27;127.0.0.1&#x27;, 6666))</span><br><span class="line"> 5 tcp.listen(5)</span><br><span class="line"> 6 while True:</span><br><span class="line"> 7     # 建立客户端连接</span><br><span class="line"> 8     clientsocket,addr = tcp.accept()      </span><br><span class="line"> 9     print(&quot;连接地址: %s&quot; % str(addr))</span><br><span class="line">10     msg = &#x27;欢迎访问&#123;&#125;！&#x27;.format(tcp.getsockname())+ &quot;\r\n&quot;</span><br><span class="line">11     clientsocket.send(msg.encode(&#x27;utf-8&#x27;))</span><br><span class="line">12     clientsocket.close()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="TCP-客户端"><a href="#TCP-客户端" class="headerlink" title="TCP_客户端"></a>TCP_客户端</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import socket as s</span><br><span class="line"></span><br><span class="line">tcp = s.socket(s.AF_INET,s.SOCK_STREAM)</span><br><span class="line">tcp.connect((&#x27;127.0.0.1&#x27;, 6666))</span><br><span class="line">msg = tcp.recv(1024)</span><br><span class="line">tcp.close()</span><br><span class="line">print (msg.decode(&#x27;utf-8&#x27;))</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h1 id="UDP通信"><a href="#UDP通信" class="headerlink" title="UDP通信"></a>UDP通信</h1><h2 id="UDP-服务端"><a href="#UDP-服务端" class="headerlink" title="UDP_服务端"></a>UDP_服务端</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line"></span><br><span class="line">BUFSIZE = 1024</span><br><span class="line">ip_port = (&#x27;127.0.0.1&#x27;, 9999)</span><br><span class="line">server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # udp协议</span><br><span class="line">server.bind(ip_port)</span><br><span class="line">while True:</span><br><span class="line">    data,client_addr = server.recvfrom(BUFSIZE)</span><br><span class="line">    print(&#x27;client地址：&#x27;, client_addr,&#x27;server收到的数据：&#x27;, data.decode(&quot;UTF-8&quot;))</span><br><span class="line">    server.sendto(data,client_addr)</span><br><span class="line">server.close()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="UDP-客户端"><a href="#UDP-客户端" class="headerlink" title="UDP_客户端"></a>UDP_客户端</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import socket</span><br><span class="line">BUFSIZE = 1024</span><br><span class="line"></span><br><span class="line">client = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)</span><br><span class="line">while True:</span><br><span class="line">    msg = input(&quot;&gt;&gt;&quot;).strip()</span><br><span class="line">    ip_port = (&#x27;127.0.0.1&#x27;, 9999)</span><br><span class="line">    client.sendto(msg.encode(&#x27;utf-8&#x27;),ip_port)</span><br><span class="line"> </span><br><span class="line">    data,server_addr = client.recvfrom(BUFSIZE)</span><br><span class="line">    print(server_addr,&#x27;服务端收到: &#x27;,data.decode(&quot;UTF-8&quot;))</span><br><span class="line"></span><br><span class="line">client.close()</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
@@ -336,7 +345,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://xin02.github.io/2021/06/15/hello-world/" title="Hello World" target="_blank" rel="external">https://xin02.github.io/2021/06/15/hello-world/</a>
+      <a href="https://xin02.github.io/2021/06/04/Python3%20%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%EF%BC%88%E4%BD%BF%E7%94%A8Socket%E5%AE%9E%E7%8E%B0TCP%E3%80%81UDP%E9%80%9A%E4%BF%A1%EF%BC%89/" title="Python3 网络编程（使用Socket实现TCP、UDP通信）" target="_blank" rel="external">https://xin02.github.io/2021/06/04/Python3 网络编程（使用Socket实现TCP、UDP通信）/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -377,6 +386,25 @@
 
   <nav class="bar bar-footer clearfix" data-stick-bottom>
   <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2021/06/05/Python3%20%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="Python3 多线程"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">
+        <span>[&nbsp;</span><span>文章目录</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
+    
+  </ul>
   
   
   <!-- Button trigger modal -->
