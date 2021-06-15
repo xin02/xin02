@@ -18,15 +18,34 @@
   
   
   <title>Hexo</title>
-  <meta property="og:type" content="website">
+  <meta name="description" content="title: 文件上传漏洞符合categories:  PHP 渗透tags: PHP 渗透toc: true # 是否启用内容索引  1、上传漏洞总结  2、upload_labs1、客户端使用JS校验直接禁用JS即可，或者直接F12重新定义一下校验函数，使校验函数无效。  2、修改content-type 使用burp抓包，修改Content-Type的值为image&#x2F;jpeg，成功绕过。 3">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://xin02.github.com/index.html">
+<meta property="og:url" content="https://xin02.github.com/2021/06/15/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title: 文件上传漏洞符合categories:  PHP 渗透tags: PHP 渗透toc: true # 是否启用内容索引  1、上传漏洞总结  2、upload_labs1、客户端使用JS校验直接禁用JS即可，或者直接F12重新定义一下校验函数，使校验函数无效。  2、修改content-type 使用burp抓包，修改Content-Type的值为image&#x2F;jpeg，成功绕过。 3">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215205007.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215211551.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215211551.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215211811.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215215041.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215215218.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215215510.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215215842.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215220337.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215221907.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215221923.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215221954.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215222130.png">
+<meta property="og:image" content="https://gitee.com/xlcm/images/raw/master/20210215223151.png">
+<meta property="article:published_time" content="2021-06-15T07:51:54.417Z">
+<meta property="article:modified_time" content="2021-06-15T07:53:09.367Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/xlcm/images/raw/master/20210215205007.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://xin02.github.com/index.html">
+  <link rel="canonical" href="https://xin02.github.com/2021/06/15/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -235,10 +254,9 @@
 </aside>
 
   
-  <main class="main" role="main">
   
-  
-    <div class="content">
+<main class="main" role="main">
+  <div class="content">
   <article id="post-文件上传" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
@@ -335,11 +353,78 @@
     </div>
   </article>
   
-</div>
+    
+  <section id="comments">
+  	
+  </section>
+
 
   
+</div>
 
-   
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢支持，及时当勉励，岁月不待人!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.jpg" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -401,6 +486,8 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
 
 
 
