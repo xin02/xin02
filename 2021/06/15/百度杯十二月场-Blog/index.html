@@ -18,15 +18,35 @@
   
   
   <title>Hexo</title>
-  <meta property="og:type" content="website">
+  <meta name="description" content="首先注册一个账号 登录之后，进入留言板    通过在title中构造sql语句，发现插入的留言标题，一次为1一次为0  说明此处存在sql注入漏洞，猜测此处为一个insert注入 1insert into table(columns) values(A1,B1,C1)  insert语句本身没有回显，但是插入的内容会显示在页面中，尝试插入sql语句进行回显 首先要猜测字段数，表面上看有userna">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://xin02.github.io/index.html">
+<meta property="og:url" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="首先注册一个账号 登录之后，进入留言板    通过在title中构造sql语句，发现插入的留言标题，一次为1一次为0  说明此处存在sql注入漏洞，猜测此处为一个insert注入 1insert into table(columns) values(A1,B1,C1)  insert语句本身没有回显，但是插入的内容会显示在页面中，尝试插入sql语句进行回显 首先要猜测字段数，表面上看有userna">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415112736624.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415112621165.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415112843157.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415112850300.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415125950616.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415125912901.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415131045333.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415131238505.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415131835787.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415132218851.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415132429109.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415132456967.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415132946355.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415133013399.png">
+<meta property="og:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415133116918.png">
+<meta property="article:published_time" content="2021-06-15T08:01:57.520Z">
+<meta property="article:modified_time" content="2021-04-15T05:31:30.981Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog.assets/image-20210415112736624.png">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://xin02.github.io/index.html">
+  <link rel="canonical" href="https://xin02.github.io/2021/06/15/%E7%99%BE%E5%BA%A6%E6%9D%AF%E5%8D%81%E4%BA%8C%E6%9C%88%E5%9C%BA-Blog/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -235,10 +255,9 @@
 </aside>
 
   
-  <main class="main" role="main">
   
-  
-    <div class="content">
+<main class="main" role="main">
+  <div class="content">
   <article id="post-百度杯十二月场-Blog" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
@@ -357,11 +376,78 @@
     </div>
   </article>
   
-</div>
+    
+  <section id="comments">
+  	
+  </section>
+
 
   
+</div>
 
-   
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>赏</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>感谢支持，及时当勉励，岁月不待人!</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开支付宝扫一扫，即可进行扫码打赏哦</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.jpg" alt="扫码支持" title="扫一扫" />
+              </div>
+              <p class="text-muted mv">扫码打赏，你说多少就多少</p>
+              <p class="text-grey">打开微信扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> 支付宝</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> 微信支付</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -423,6 +509,8 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
 
 
 
